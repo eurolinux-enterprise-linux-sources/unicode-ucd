@@ -4,7 +4,7 @@
 
 Name:           unicode-ucd
 Version:        6.3.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Unicode Character Database
 
 # https://fedoraproject.org/wiki/Licensing/MIT#Modern_Style_without_sublicense_.28Unicode.29
@@ -46,6 +46,9 @@ cp -ar . %{buildroot}%{ucddir}
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 6.3.0-2
+- Mass rebuild 2013-12-27
+
 * Tue Oct  8 2013 Jens Petersen <petersen@redhat.com> - 6.3.0-1
 - update to 6.3 (#1013930)
 - add a version check to prevent packaging a version mismatch
